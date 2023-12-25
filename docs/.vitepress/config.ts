@@ -4,6 +4,7 @@ import { githubCodeImport } from 'rollup-plugin-github-code-import';
 export default defineConfig({
   title: 'rollup-plugin-github-code-import',
   description: 'Rollup plugin that imports code from a GitHub URL.',
+  base: '/rollup-plugin-github-code-import/',
   themeConfig: {
     socialLinks: [
       {

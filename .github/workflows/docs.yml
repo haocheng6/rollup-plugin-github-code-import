@@ -5,8 +5,8 @@ on:
     branches:
       - main
     paths:
-      - docs
-      - src
+      - docs/**
+      - src/**
       - .github/workflows/docs.yml
 
 jobs:
