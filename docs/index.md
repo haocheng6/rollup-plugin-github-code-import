@@ -22,16 +22,8 @@ npm i -D rollup-plugin-github-code-import
 
 To use this plugin in a VitePress project, add it to the `vite.plugins` config:
 
-```js{6-8}
-import { githubCodeImport } from 'rollup-plugin-github-code-import';
-
-export default defineConfig({
-  title: 'vite-github-codeblock-plugin',
-  description: 'Vite plugin that imports code from a GitHub URL in fenced code blocks.',
-  vite: {
-    plugins: [githubCodeImport],
-  },
-});
+```js{2,16-18} reference
+https://github.com/haocheng6/rollup-plugin-github-code-import/blob/99e6d0592c3ba15dc689474d58c75527914e0671/docs/.vitepress/config.ts
 ```
 
 To use custom CSS for fenced code blocks that import code from GitHub, add a
@@ -39,25 +31,8 @@ custom CSS file to your VitePress project by following [VitePress instructions][
 
 This page uses the following CSS:
 
-```css
-.imported-github-code {
-  display: flow-root;
-  margin-top: 16px;
-}
-
-.imported-github-code > div:first-child {
-  margin-top: 0;
-  margin-bottom: 4px;
-}
-
-.github-code-link {
-  float: right;
-  font-size: 0.875rem;
-}
-
-.github-code-link > a::after {
-  content: '';
-}
+```css reference
+https://github.com/haocheng6/rollup-plugin-github-code-import/blob/99e6d0592c3ba15dc689474d58c75527914e0671/docs/.vitepress/theme/custom.css
 ```
 
 ## Examples

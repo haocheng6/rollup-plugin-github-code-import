@@ -1,8 +1,11 @@
 # rollup-plugin-github-code-import
 
-This plugin imports code from a GitHub URL in fenced code blocks. The content
-of such codeblocks is replaced at build time, so it is recommended to use
-permalinks from GitHub.
+This is a [Rollup][1] plugin that imports code from a GitHub URL in fenced code
+blocks, inspired by [docusaurus-theme-github-codeblock][2].
+
+> [!TIP]
+> The content of such codeblocks is replaced at build time, so it is recommended
+> to use permalinks from GitHub.
 
 ## Installation
 
@@ -27,9 +30,9 @@ export default defineConfig({
 ```
 
 To use custom CSS for fenced code blocks that import code from GitHub, add a
-custom CSS file to your VitePress project by following [VitePress instructions][1].
+custom CSS file to your VitePress project by following [VitePress instructions][3].
 
-The documentation page uses the following CSS:
+The [documentation page][4] uses the following CSS:
 
 ```css
 .imported-github-code {
@@ -54,7 +57,7 @@ The documentation page uses the following CSS:
 
 ## Examples
 
-The output of the following examples can be found at the documentation page.
+The output of the following examples can be found at the [documentation page][4].
 
 ### Importing an Entire File
 
@@ -97,4 +100,7 @@ https://github.com/haocheng6/rollup-plugin-github-code-import/blob/d9d8c354f3dca
 ```
 ````
 
-[1]: https://vitepress.dev/guide/extending-default-theme#customizing-css
+[1]: https://github.com/rollup/rollup
+[2]: https://github.com/saucelabs/docusaurus-theme-github-codeblock
+[3]: https://vitepress.dev/guide/extending-default-theme#customizing-css
+[4]: https://haocheng6.github.io/rollup-plugin-github-code-import
