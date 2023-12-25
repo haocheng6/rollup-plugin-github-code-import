@@ -71,14 +71,14 @@ Input:
 
 ````markdown
 ```ts reference
-https://github.com/lodash/lodash/blob/aa18212085c52fc106d075319637b8729e0f179f/src/add.ts
+https://github.com/haocheng6/rollup-plugin-github-code-import/blob/d9d8c354f3dcad786aad4c5a7aa154f42f2ba7ff/src/index.ts
 ```
 ````
 
 Output:
 
 ```ts reference
-https://github.com/lodash/lodash/blob/aa18212085c52fc106d075319637b8729e0f179f/src/add.ts
+https://github.com/haocheng6/rollup-plugin-github-code-import/blob/d9d8c354f3dcad786aad4c5a7aa154f42f2ba7ff/src/index.ts
 ```
 
 ### Importing a Range of Lines
@@ -88,15 +88,15 @@ The plugin can also import only a range of lines from GitHub.
 Input:
 
 ````markdown
-```js reference
-https://github.com/mdn/content/blob/83f3bb0c0663edf3c4f86da8a07d8ac0a75b5ccb/scripts/front-matter_utils.js#L68-L80
+```ts reference
+https://github.com/haocheng6/rollup-plugin-github-code-import/blob/d9d8c354f3dcad786aad4c5a7aa154f42f2ba7ff/src/index.ts#L10-L20
 ```
 ````
 
 Output:
 
-```js reference
-https://github.com/mdn/content/blob/83f3bb0c0663edf3c4f86da8a07d8ac0a75b5ccb/scripts/front-matter_utils.js#L68-L80
+```ts reference
+https://github.com/haocheng6/rollup-plugin-github-code-import/blob/d9d8c354f3dcad786aad4c5a7aa154f42f2ba7ff/src/index.ts#L10-L20
 ```
 
 ### Line Highlighting
@@ -106,15 +106,15 @@ This plugin works with the line highting extension of VitePress.
 Input:
 
 ````markdown
-```js{3} reference
-https://github.com/mdn/content/blob/83f3bb0c0663edf3c4f86da8a07d8ac0a75b5ccb/scripts/front-matter_utils.js#L68-L80
+```ts{2} reference
+https://github.com/haocheng6/rollup-plugin-github-code-import/blob/d9d8c354f3dcad786aad4c5a7aa154f42f2ba7ff/src/index.ts#L10-L20
 ```
 ````
 
 Output:
 
-```js{3} reference
-https://github.com/mdn/content/blob/83f3bb0c0663edf3c4f86da8a07d8ac0a75b5ccb/scripts/front-matter_utils.js#L68-L80
+```ts{2} reference
+https://github.com/haocheng6/rollup-plugin-github-code-import/blob/d9d8c354f3dcad786aad4c5a7aa154f42f2ba7ff/src/index.ts#L10-L20
 ```
 
 ### Line Numbers
@@ -124,15 +124,15 @@ This plugin also works with the line number extension of VitePress.
 Input:
 
 ````markdown
-```js:line-numbers=68 reference
-https://github.com/mdn/content/blob/83f3bb0c0663edf3c4f86da8a07d8ac0a75b5ccb/scripts/front-matter_utils.js#L68-L80
+```ts:line-numbers=10 reference
+https://github.com/haocheng6/rollup-plugin-github-code-import/blob/d9d8c354f3dcad786aad4c5a7aa154f42f2ba7ff/src/index.ts#L10-L20
 ```
 ````
 
 Output:
 
-```js:line-numbers=68 reference
-https://github.com/mdn/content/blob/83f3bb0c0663edf3c4f86da8a07d8ac0a75b5ccb/scripts/front-matter_utils.js#L68-L80
+```ts:line-numbers=10 reference
+https://github.com/haocheng6/rollup-plugin-github-code-import/blob/d9d8c354f3dcad786aad4c5a7aa154f42f2ba7ff/src/index.ts#L10-L20
 ```
 
 [1]: https://vitepress.dev/guide/extending-default-theme#customizing-css

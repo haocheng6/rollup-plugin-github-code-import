@@ -29,7 +29,7 @@ export default defineConfig({
 To use custom CSS for fenced code blocks that import code from GitHub, add a
 custom CSS file to your VitePress project by following [VitePress instructions][1].
 
-This page uses the following CSS:
+The documentation page uses the following CSS:
 
 ```css
 .imported-github-code {
@@ -54,6 +54,8 @@ This page uses the following CSS:
 
 ## Examples
 
+The output of the following examples can be found at the documentation page.
+
 ### Importing an Entire File
 
 To import code from GitHub, simply add `reference` to the opening line of a
@@ -61,7 +63,7 @@ fenced code block and add the GitHub URL to the content of the code block.
 
 ````markdown
 ```ts reference
-https://github.com/lodash/lodash/blob/aa18212085c52fc106d075319637b8729e0f179f/src/add.ts
+https://github.com/haocheng6/rollup-plugin-github-code-import/blob/d9d8c354f3dcad786aad4c5a7aa154f42f2ba7ff/src/index.ts
 ```
 ````
 
@@ -70,8 +72,8 @@ https://github.com/lodash/lodash/blob/aa18212085c52fc106d075319637b8729e0f179f/s
 The plugin can also import only a range of lines from GitHub.
 
 ````markdown
-```js reference
-https://github.com/mdn/content/blob/83f3bb0c0663edf3c4f86da8a07d8ac0a75b5ccb/scripts/front-matter_utils.js#L68-L80
+```ts reference
+https://github.com/haocheng6/rollup-plugin-github-code-import/blob/d9d8c354f3dcad786aad4c5a7aa154f42f2ba7ff/src/index.ts#L10-L20
 ```
 ````
 
@@ -80,8 +82,8 @@ https://github.com/mdn/content/blob/83f3bb0c0663edf3c4f86da8a07d8ac0a75b5ccb/scr
 This plugin works with the line highting extension of VitePress.
 
 ````markdown
-```js{3} reference
-https://github.com/mdn/content/blob/83f3bb0c0663edf3c4f86da8a07d8ac0a75b5ccb/scripts/front-matter_utils.js#L68-L80
+```ts{2} reference
+https://github.com/haocheng6/rollup-plugin-github-code-import/blob/d9d8c354f3dcad786aad4c5a7aa154f42f2ba7ff/src/index.ts#L10-L20
 ```
 ````
 
@@ -90,8 +92,8 @@ https://github.com/mdn/content/blob/83f3bb0c0663edf3c4f86da8a07d8ac0a75b5ccb/scr
 This plugin also works with the line number extension of VitePress.
 
 ````markdown
-```js:line-numbers=68 reference
-https://github.com/mdn/content/blob/83f3bb0c0663edf3c4f86da8a07d8ac0a75b5ccb/scripts/front-matter_utils.js#L68-L80
+```ts:line-numbers=10 reference
+https://github.com/haocheng6/rollup-plugin-github-code-import/blob/d9d8c354f3dcad786aad4c5a7aa154f42f2ba7ff/src/index.ts#L10-L20
 ```
 ````
 
