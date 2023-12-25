@@ -39,9 +39,6 @@ importers:
       typescript:
         specifier: ^5.3.3
         version: 5.3.3
-      vite:
-        specifier: ^5.0.10
-        version: 5.0.10
 
   docs:
     devDependencies:
