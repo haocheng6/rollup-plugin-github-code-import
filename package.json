@@ -1,0 +1,51 @@
+{
+  "name": "rollup-plugin-github-code-import",
+  "version": "0.0.0",
+  "description": "Rollup plugin that imports code from a GitHub URL",
+  "type": "module",
+  "exports": "./dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "format": "prettier --check --write .",
+    "format:fail": "prettier --check .",
+    "lint": "eslint --cache .",
+    "build": "tsc"
+  },
+  "keywords": [
+    "rollup-plugin",
+    "vite-plugin",
+    "markdown",
+    "code-block"
+  ],
+  "license": "MIT",
+  "files": [
+    "dist",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
+  "author": {
+    "name": "Hao Cheng",
+    "email": "hcheng636@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haocheng6/rollup-plugin-github-code-import.git"
+  },
+  "packageManager": "pnpm@8.12.1",
+  "dependencies": {
+    "remark": "^15.0.1",
+    "remark-frontmatter": "^5.0.0",
+    "remark-github-code-import": "^0.1.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-import": "^2.29.1",
+    "prettier": "3.1.1",
+    "rollup": "^4.9.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.10"
+  }
+}
