@@ -74,6 +74,24 @@ Output:
 https://github.com/haocheng6/rollup-plugin-github-code-import/blob/d9d8c354f3dcad786aad4c5a7aa154f42f2ba7ff/src/index.ts#L10-L20
 ```
 
+### Importing a Single Line
+
+Specify only one line at the end of the GitHub URL if that is all you want to import.
+
+Input:
+
+````markdown
+```ts reference
+https://github.com/haocheng6/rollup-plugin-github-code-import/blob/d9d8c354f3dcad786aad4c5a7aa154f42f2ba7ff/src/index.ts#L16
+```
+````
+
+Output:
+
+```ts reference
+https://github.com/haocheng6/rollup-plugin-github-code-import/blob/d9d8c354f3dcad786aad4c5a7aa154f42f2ba7ff/src/index.ts#L16
+```
+
 ### Line Highlighting
 
 This plugin works with the line highting extension of VitePress.
