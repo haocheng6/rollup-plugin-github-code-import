@@ -21,8 +21,6 @@ To use this plugin in a VitePress project, add it to the `vite.plugins` config:
 import { githubCodeImport } from 'rollup-plugin-github-code-import';
 
 export default defineConfig({
-  title: 'vite-github-codeblock-plugin',
-  description: 'Vite plugin that imports code from a GitHub URL in fenced code blocks.',
   vite: {
     plugins: [githubCodeImport],
   },

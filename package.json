@@ -37,7 +37,8 @@
   "dependencies": {
     "remark": "^15.0.1",
     "remark-frontmatter": "^5.0.0",
-    "remark-github-code-import": "^0.1.2"
+    "remark-github-code-import": "^0.2.0",
+    "vfile": "^6.0.1"
   },
   "devDependencies": {
     "@types/node": "^20.10.5",
