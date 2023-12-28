@@ -22,7 +22,7 @@ npm i -D rollup-plugin-github-code-import
 
 To use this plugin in a VitePress project, add it to the `vite.plugins` config:
 
-```js{2,16-18} reference
+```ts{2,16-18} reference
 https://github.com/haocheng6/rollup-plugin-github-code-import/blob/99e6d0592c3ba15dc689474d58c75527914e0671/docs/.vitepress/config.ts
 ```
 
@@ -32,7 +32,7 @@ custom CSS file to your VitePress project by following [VitePress instructions][
 This page uses the following CSS:
 
 ```css reference
-https://github.com/haocheng6/rollup-plugin-github-code-import/blob/99e6d0592c3ba15dc689474d58c75527914e0671/docs/.vitepress/theme/custom.css
+https://github.com/haocheng6/rollup-plugin-github-code-import/blob/main/docs/.vitepress/theme/custom.css
 ```
 
 ## Examples
@@ -127,5 +127,50 @@ Output:
 ```ts:line-numbers=10 reference
 https://github.com/haocheng6/rollup-plugin-github-code-import/blob/d9d8c354f3dcad786aad4c5a7aa154f42f2ba7ff/src/index.ts#L10-L20
 ```
+
+### Code Groups
+
+To use this plugin together with the code groups extension of VitePress, the
+`reference` property must be at the end of the opening line of code blocks.
+
+Input:
+
+````markdown
+::: code-group
+
+```ts [index.ts] reference
+https://github.com/haocheng6/rollup-plugin-github-code-import/blob/d9d8c354f3dcad786aad4c5a7aa154f42f2ba7ff/src/index.ts#L10-L20
+```
+
+```ts [configs.ts] reference
+https://github.com/haocheng6/rollup-plugin-github-code-import/blob/99e6d0592c3ba15dc689474d58c75527914e0671/docs/.vitepress/config.ts#L4-L19
+```
+
+```js [test.js]
+// This is not imported from GitHub.
+console.log("Hello world!");
+```
+
+:::
+````
+
+Output:
+
+::: code-group
+
+```ts [index.ts] reference
+https://github.com/haocheng6/rollup-plugin-github-code-import/blob/d9d8c354f3dcad786aad4c5a7aa154f42f2ba7ff/src/index.ts#L10-L20
+```
+
+```ts [configs.ts] reference
+https://github.com/haocheng6/rollup-plugin-github-code-import/blob/99e6d0592c3ba15dc689474d58c75527914e0671/docs/.vitepress/config.ts#L4-L19
+```
+
+```js [test.js]
+// This is not imported from GitHub.
+console.log("Hello world!");
+```
+
+:::
 
 [1]: https://vitepress.dev/guide/extending-default-theme#customizing-css

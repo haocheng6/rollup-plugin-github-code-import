@@ -15,8 +15,8 @@ importers:
         specifier: ^5.0.0
         version: 5.0.0
       remark-github-code-import:
-        specifier: ^0.2.0
-        version: 0.2.0
+        specifier: ^0.2.1
+        version: 0.2.1
       vfile:
         specifier: ^6.0.1
         version: 6.0.1
@@ -2903,8 +2903,8 @@ packages:
       - supports-color
     dev: false
 
-  /remark-github-code-import@0.2.0:
-    resolution: {integrity: sha512-XMVQqHYSOOkm1SkSA+FKrVlkZDBEnnHMrR7EvgmKxiIM9cVXMNWTLpjGY9uK9LuhDr/Psp1GGRFvLnM4UjPqPg==}
+  /remark-github-code-import@0.2.1:
+    resolution: {integrity: sha512-Gpyb4QWGuaYZZ7m6UMirNkrnd0jdD1NY/SAaWAxSNZ+M+p0jnD5cHxN+xnf7LNuRyKSvYN4bHKKU5OU5/FkBvg==}
     dependencies:
       fenceparser: 2.2.0
       unist-util-stringify-position: 4.0.0

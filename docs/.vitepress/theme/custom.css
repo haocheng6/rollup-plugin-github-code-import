@@ -3,16 +3,33 @@
   margin-top: 16px;
 }
 
-.imported-github-code > div:first-child {
+.imported-github-code > div[class*='language-'] {
   margin-top: 0;
   margin-bottom: 4px;
 }
 
-.github-code-link {
+.imported-github-code > .github-code-link {
   float: right;
   font-size: 0.875rem;
 }
 
-.github-code-link > a::after {
+.imported-github-code > .github-code-link > a::after {
   content: '';
+}
+
+.vp-code-group .imported-github-code {
+  display: none;
+  margin-top: 0;
+}
+
+.vp-code-group .imported-github-code > div[class*='language-'] {
+  display: none;
+}
+
+.vp-code-group .imported-github-code.active {
+  display: flow-root;
+}
+
+.vp-code-group .imported-github-code.active > div[class*='language-'] {
+  display: block;
 }

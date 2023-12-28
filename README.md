@@ -30,28 +30,8 @@ export default defineConfig({
 To use custom CSS for fenced code blocks that import code from GitHub, add a
 custom CSS file to your VitePress project by following [VitePress instructions][3].
 
-The [documentation page][4] uses the following CSS:
-
-```css
-.imported-github-code {
-  display: flow-root;
-  margin-top: 16px;
-}
-
-.imported-github-code > div:first-child {
-  margin-top: 0;
-  margin-bottom: 4px;
-}
-
-.github-code-link {
-  float: right;
-  font-size: 0.875rem;
-}
-
-.github-code-link > a::after {
-  content: '';
-}
-```
+For example, the custom CSS used by the [documentation page][4] can be found
+[here][5].
 
 ## Examples
 
@@ -108,7 +88,32 @@ https://github.com/haocheng6/rollup-plugin-github-code-import/blob/d9d8c354f3dca
 ```
 ````
 
+### Code Groups
+
+To use this plugin together with the code groups extension of VitePress, the
+`reference` property must be at the end of the opening line of code blocks.
+
+````markdown
+::: code-group
+
+```ts [index.ts] reference
+https://github.com/haocheng6/rollup-plugin-github-code-import/blob/d9d8c354f3dcad786aad4c5a7aa154f42f2ba7ff/src/index.ts#L10-L20
+```
+
+```ts [configs.ts] reference
+https://github.com/haocheng6/rollup-plugin-github-code-import/blob/99e6d0592c3ba15dc689474d58c75527914e0671/docs/.vitepress/config.ts#L4-L19
+```
+
+```js [test.js]
+// This is not imported from GitHub.
+console.log("Hello world!");
+```
+
+:::
+````
+
 [1]: https://github.com/rollup/rollup
 [2]: https://github.com/saucelabs/docusaurus-theme-github-codeblock
 [3]: https://vitepress.dev/guide/extending-default-theme#customizing-css
 [4]: https://haocheng6.github.io/rollup-plugin-github-code-import
+[5]: https://github.com/haocheng6/rollup-plugin-github-code-import/blob/main/docs/.vitepress/theme/custom.css
